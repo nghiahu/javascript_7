@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum_num(arr, num) {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = i + 1; j < arr.length; j++) {
+                    if (arr[i] + arr[j] === num) {
+                        return [arr[i], arr[j]];
+                    }
+                }
+            }
+            return null;
+        }
+        let arr = [1,2,3,4,5,6,7,8,9];
+        let num = parseInt(prompt("Nhập vào một số nguyên:"));
+        let end = sum_num(arr, num);
+        if (end) {
+            console.log("Cặp số trong mảng có tổng bằng " + num + ": " + end[0] + " và " + end[1]);
+        } else {
+            console.log("Không tìm thấy cặp số nào có tổng bằng " + num);
+        }
+    </script>
+</body>
+</html>

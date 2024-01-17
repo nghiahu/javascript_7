@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function char(str) {
+    let str_void = str.replace(/\s/g, '');
+    return str_void.length;
+        }
+        let str = "a bc dfgh";
+        let a = char(str);
+        console.log("Số ký tự trong chuỗi: " + a);
+    </script>
+</body>
+</html>

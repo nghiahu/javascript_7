@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [ 4, 8, "Hi", true, 2, "Hello", 5.2];
+        for (let i = 0; i < arr.length; i++) {
+            let j = Math.floor(Math.random() * arr.length);
+            let t = arr[i];
+            arr[i] = arr[j];
+            arr[j] = t;
+        }
+        console.log(arr)
+    </script>
+</body>
+</html>

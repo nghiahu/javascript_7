@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function char(str, chater) {
+            let arr_char = str.split('');
+            let char_h = arr_char.filter(function (item) {
+                return item === chater;
+            });
+            return char_h.length;
+        }
+        let str = prompt("Nhập vào một chuỗi:");
+        let chater = prompt("Nhập vào một ký tự:");
+        let b = char(str, chater);
+        console.log("Số lần xuất hiện của ký tự '" + chater + "' trong chuỗi là: " + b);
+    </script>
+</body>
+</html>

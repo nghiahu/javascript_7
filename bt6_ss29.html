@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Capitalization(arr) {
+            let arr_t = arr.split(' ');
+            let arr_chater = arr_t.map(function (chater) {
+                return chater.charAt(0).toUpperCase() + chater.slice(1);
+            });
+            let str = arr_chater .join(' ');
+            return str;
+        }
+        let arr = "hello how are you";
+        let a = Capitalization(arr);
+        console.log("Chuỗi sau khi viết hoa chữ cái đầu: " + a);
+    </script>
+</body>
+</html>

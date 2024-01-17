@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function filter_char(arr, str) {
+            let result = arr.filter(function (chater) {
+                return chater.includes(str);
+            });
+            return result;
+        }
+        let arr = ["Hello goodmood", "hi faw", "How are you", "Im fine"];
+        let str = prompt("Nhập vào một chuỗi:");
+        let end = filter_char(arr, str);
+        console.log("Các phần tử trong mảng chứa chuỗi '" + str + "':");
+        console.log(end);
+    </script>
+</body>
+</html>

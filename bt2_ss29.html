@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function longestchar(arr) {
+        let longest = 0;
+        let bigchar = null;
+        for (let i = 0; i < arr.length; i++) {
+            let long = arr[i].length;
+            if (long > longest) {
+                longest = long;
+                bigchar = arr[i];
+            }
+        }
+        return bigchar;
+    }
+    let arr = [1, 3.5, "hello", "hi", 88];
+    let c = longestchar(arr);
+    console.log("Phần tử có độ dài lớn nhất trong mảng là: " + c);
+
+    </script>
+</body>
+</html>
